@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+<h1>Programmer Data</h1>
+<form action="addProgrammer" method="POST">
+<!--    <h3>Enter Programmer's ID</h3>-->
+<!--    <input type="text" name="pId">-->
+    <h3>Enter Programmer's Name</h3>
+    <input type="text" name="pName">
+    <h3>Enter Programmer's Language</h3>
+    <input type="text" name="plan">
+    <button type="submit">Add Programmer</button>
+</form>
+<hr />
+
+<form action="findById" method="POST">
+        <h3>Enter Programmer's ID</h3>
+        <input type="text" name="pId">
+    <button type="submit">Find By ID</button>
+</form>
+<hr />
+
+<form action="findByplan" method="POST">
+    <h3>Enter Programmer's Language</h3>
+    <input type="text" name="plan">
+    <button type="submit">Find By language</button>
+</form>
+<hr />
+
+
+<form action="findBypName" method="POST">
+    <h3>Enter Programmer's Name</h3>
+    <input type="text" name="pName">
+    <button type="submit">Find By Name</button>
+</form>
+<hr />
+
+
+
+<form action="deleteProgrammer" method="GET">
+    <h3>Enter Programmer's ID</h3>
+    <input type="text" name="pId">
+    <button type="submit">Delete</button>
+</form>
+
+
+<hr />
+
+<form action="updateProgrammer" method="POST">
+    <h3>Enter Programmer's ID</h3>
+    <input type="text" name="pId">
+    <h3>Enter Programmer's Name</h3>
+    <input type="text" name="pName">
+    <h3>Enter Programmer's Language</h3>
+    <input type="text" name="plan">
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>

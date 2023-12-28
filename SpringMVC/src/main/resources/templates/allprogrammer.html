@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Using GET method catch data</title>
+</head>
+<body>
+<h1>All Data are Display</h1>
+<table>
+    <tr th:each="p:${programmers}">
+        <td th:text="${p.pId}">
+        <td th:text="${p.pName}">
+        <td th:text="${p.plan}">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
